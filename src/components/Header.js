@@ -67,7 +67,8 @@ function Header() {
 
             <Image
                 alignSelf="center"
-                my={isNotSmallerScreen ? "0" : "12"}
+                mt={isNotSmallerScreen ? "0" : "12"}
+                mb={isNotSmallerScreen ? "0" : "24"}
                 borderRadius="full"
                 backgroundColor="transparent"
                 boxShadow="lg"
