@@ -16,7 +16,6 @@ function Header() {
     const { colorMode } = useColorMode();
     const isDark = colorMode === "dark";
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
-    console.log(isNotSmallerScreen)
 
     const { beforeName, name, bio, actionButton, avatar } = header;
 
