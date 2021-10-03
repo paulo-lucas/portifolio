@@ -7,7 +7,8 @@ import {
     Stack,
     useColorMode,
     useMediaQuery,
-    Button
+    Button,
+    Image
 } from "@chakra-ui/react";
 import { header } from "content.json"
 
@@ -15,8 +16,9 @@ function Header() {
     const { colorMode } = useColorMode();
     const isDark = colorMode === "dark";
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+    console.log(isNotSmallerScreen)
 
-    const { beforeName, name, bio, actionButton } = header;
+    const { beforeName, name, bio, actionButton, avatar } = header;
 
     return <Stack>
         <Circle
@@ -24,10 +26,11 @@ function Header() {
             bg="blue.100"
             opacity="0.1"
             w="300px" h="300px"
-            alignSelf="flex-end" />
+            alignSelf="flex-end"
+            zIndex={0.1} />
 
         <Flex
-            direction={isNotSmallerScreen ? "row" : "collumn"}
+            direction={isNotSmallerScreen ? "row" : "column"}
             spacing="200px"
             p={isNotSmallerScreen ? "32" : "0"}
             alignSelf="flex-start" >
@@ -62,6 +65,16 @@ function Header() {
                     {actionButton.text}
                 </Button>
             </Box>
+
+            <Image
+                alignSelf="center"
+                my={isNotSmallerScreen ? "0" : "12"}
+                borderRadius="full"
+                backgroundColor="transparent"
+                boxShadow="lg"
+                boxSize="300px"
+                src={avatar}
+                zIndex={1} />
         </Flex>
     </Stack>
 }

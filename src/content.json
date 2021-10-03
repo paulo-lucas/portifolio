@@ -15,6 +15,7 @@
         "actionButton": {
             "text": "Hire me",
             "action": "https://raw.githubusercontent.com/paulo-lucas/CurriculumVitae/master/curriculo.pdf"
-        }
+        },
+        "avatar": "https://avatars.githubusercontent.com/u/51492825?v=4"
     }
 }
