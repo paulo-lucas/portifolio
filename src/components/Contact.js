@@ -3,7 +3,8 @@ import {
     Flex,
     Heading,
     IconButton,
-    Spacer
+    Spacer,
+    useMediaQuery
 } from "@chakra-ui/react";
 import {
     FaInstagram,
@@ -20,8 +21,10 @@ import { contact } from 'content.json'
 
 function Contact() {
     const { heading, links } = contact;
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     const ContactButton = ({ icon, link }) => <IconButton
+        size={isNotSmallerScreen ? "md" : "sm"}
         ml="2"
         transition="transform 0.5s ease-out"
         _hover={{
@@ -34,8 +37,8 @@ function Contact() {
 
     return <Flex w="100%">
         <Heading
-            ml="8"
-            size="md"
+            ml={isNotSmallerScreen ? "8" : "0"}
+            size={isNotSmallerScreen ? "md" : "sm"}
             fontWeight="semibold"
             color="cyan.400" >
             {heading}
@@ -69,6 +72,7 @@ function Contact() {
 
 
         <ColorModeSwitcher
+            size={isNotSmallerScreen ? "md" : "sm"}
             transition="transform 0.5s ease-out"
             _hover={{
                 transform: "rotate(360deg)"
