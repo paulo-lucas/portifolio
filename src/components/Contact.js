@@ -21,6 +21,17 @@ import { contact } from 'content.json'
 function Contact() {
     const { heading, links } = contact;
 
+    const ContactButton = ({ icon, link }) => <IconButton
+        ml="2"
+        transition="transform 0.5s ease-out"
+        _hover={{
+            transform: "rotate(360deg)"
+        }}
+        icon={icon}
+        isRound='true'
+        onClick={() => window.open(link)} />
+
+
     return <Flex w="100%">
         <Heading
             ml="8"
@@ -32,43 +43,38 @@ function Contact() {
 
         <Spacer />
 
-        <IconButton
+        <ContactButton
             icon={<FaLinkedin />}
-            isRound='true'
-            onClick={() => window.open(links.linkedin)} />
+            link={links.linkedin} />
 
-        <IconButton
-            ml={2}
+        <ContactButton
             icon={<FaInstagram />}
-            isRound='true'
-            onClick={() => window.open(links.instagram)} />
+            link={links.instagram} />
 
-        <IconButton
-            ml={2}
+        <ContactButton
             icon={<FaTwitter />}
-            isRound='true'
-            onClick={() => window.open(links.twitter)} />
+            link={links.twitter} />
 
-        {/* <IconButton
-            ml={2}
+        {/* <ContactButton
             icon={<FaHackerrank />}
-            isRound='true'
-            onClick={() => window.open(links.hackerrank)} />
+            link={links.hackerrank} />
 
-        <IconButton
-            ml={2}
+        <ContactButton
             icon={<SiCodewars />}
-            isRound='true'
-            onClick={() => window.open(links.codewars)} /> */}
+            link={links.codewars} /> */}
 
-        <IconButton
-            ml={2}
+        <ContactButton
             icon={<FaGithub />}
-            isRound='true'
-            onClick={() => window.open(links.github)} />
+            link={links.github} />
 
 
-        <ColorModeSwitcher ml={8} isRound={true} />
+        <ColorModeSwitcher
+            transition="transform 0.5s ease-out"
+            _hover={{
+                transform: "rotate(360deg)"
+            }}
+            ml={8}
+            isRound={true} />
     </Flex>
 }
 
