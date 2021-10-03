@@ -1,3 +1,4 @@
+import React from "react";
 import {
     Box,
     Text,
@@ -5,15 +6,17 @@ import {
     Flex,
     Stack,
     useColorMode,
-    useMediaQuery
-} from '@chakra-ui/react'
-import React from 'react'
+    useMediaQuery,
+    Button
+} from "@chakra-ui/react";
+import { header } from "content.json"
 
 function Header() {
     const { colorMode } = useColorMode();
     const isDark = colorMode === "dark";
-
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
+
+    const { beforeName, name, bio, actionButton } = header;
 
     return <Stack>
         <Circle
@@ -36,7 +39,7 @@ function Header() {
                 <Text
                     fontSize="5xl"
                     fontWeight="semibold" >
-                    Hi, I am
+                    {beforeName}
                 </Text>
 
                 <Text
@@ -44,14 +47,20 @@ function Header() {
                     fontWeight="bold"
                     bgGradient="linear(to-r, cyan.400, blue.500, purple.600)"
                     bgClip="text" >
-                    Paulo Lucas
+                    {name}
                 </Text>
 
                 <Text
                     color={isDark ? "gray.200" : "gray.500"} >
-                    Web and mobile developer, Computer Science student - Node.js, Ruby on Rails, React.js, React Native
+                    {bio}
                 </Text>
 
+                <Button
+                    mt={8}
+                    colorScheme="blue"
+                    onClick={() => window.open(actionButton.action)} >
+                    {actionButton.text}
+                </Button>
             </Box>
         </Flex>
     </Stack>
