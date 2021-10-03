@@ -1,0 +1,20 @@
+{
+    "contact": {
+        "heading": "plucas",
+        "links": {
+            "instagram": "https://www.instagram.com/paulo_lucasoc",
+            "linkedin": "https://www.linkedin.com/in/plucas-cer",
+            "twitter": "https://twitter.com/plucasdev",
+            "github": "https://github.com/paulo-lucas"
+        }
+    },
+    "header": {
+        "beforeName": "Hi, I am",
+        "name": "Paulo Lucas",
+        "bio": " Web and mobile developer & Computer Science student - Node.js, Ruby on Rails, React.js, React Native",
+        "actionButton": {
+            "text": "Hire me",
+            "action": "https://raw.githubusercontent.com/paulo-lucas/CurriculumVitae/master/curriculo.pdf"
+        }
+    }
+}
