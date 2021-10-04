@@ -7,11 +7,15 @@ import {
     HStack,
     Image,
     Fade,
-    VStack
+    VStack,
+    Spacer,
+    IconButton,
+    Tooltip
 } from '@chakra-ui/react';
+import { FaGithub, FaChevronCircleRight } from "react-icons/fa";
 import { getTechIcon } from "assets/icons"
 
-function Card({ projectName, description, tech, mainImage }) {
+function Card({ projectName, description, tech, mainImage, repo, live }) {
     const [expandedContainer, setExpandedContainer] = useState(false);
     const [expandedContent, setExpandedContent] = useState(false);
     const [collapsedContent, setCollapsedContent] = useState(true);
@@ -29,7 +33,7 @@ function Card({ projectName, description, tech, mainImage }) {
         setExpandedContent(false);
     }
 
-    function handleFutureContentFade() { 
+    function handleFutureContentFade() {
         setExpandedContent(expandedContainer);
         setCollapsedContent(!expandedContainer);
     }
@@ -60,10 +64,10 @@ function Card({ projectName, description, tech, mainImage }) {
             position="absolute"
             bottom="0"
             h={expandedContainer ? "100%" : "15vh"}
-            p={expandedContainer ? "8" : "3"}
+            p={collapsedContent ? "3" : "8"}
             align={expandedContainer ? "flex-start" : "center"}
             bgColor="cyan.400"
-            transition="height 0.5s cubic-bezier(.8,-0.1,.3,1.3)" >
+            transition="all 0.5s cubic-bezier(.8,-0.1,.3,1.3)" >
 
             <Fade in={collapsedContent} unmountOnExit>
                 <HStack>
@@ -84,9 +88,8 @@ function Card({ projectName, description, tech, mainImage }) {
             </Fade>
 
             <Fade in={expandedContent} unmountOnExit>
-                <VStack
-                    alignItems="flex-start"
-                    justifyContent="flex-end" >
+                <Flex
+                    direction="column" >
                     <Text
                         color="white"
                         fontSize="xl"
@@ -100,7 +103,30 @@ function Card({ projectName, description, tech, mainImage }) {
                         {description}
                     </Text>
 
-                </VStack>
+                    <HStack mt="4">
+                        {repo && <Tooltip
+                            label="See repository"
+                            color="gray.300"
+                            bgColor="gray.900" >
+                            <IconButton
+                                size="lg"
+                                icon={<FaGithub />}
+                                isRound='true'
+                                onClick={() => window.open(repo)} />
+                        </Tooltip>}
+
+                        {live && <Tooltip
+                            label="See project"
+                            color="gray.300"
+                            bgColor="gray.900" >
+                            <IconButton
+                                size="lg"
+                                icon={<FaChevronCircleRight />}
+                                isRound='true'
+                                onClick={() => window.open(live)} />
+                        </Tooltip>}
+                    </HStack>
+                </Flex>
             </Fade>
         </HStack>
     </Flex >
