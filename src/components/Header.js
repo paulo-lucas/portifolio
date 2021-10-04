@@ -69,6 +69,7 @@ function Header() {
                 alignSelf="center"
                 mt={isNotSmallerScreen ? "0" : "12"}
                 mb={isNotSmallerScreen ? "0" : "24"}
+                ml={isNotSmallerScreen ? "12" : "0"}
                 borderRadius="full"
                 backgroundColor="transparent"
                 boxShadow="lg"
