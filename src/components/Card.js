@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import {
     Text,
     Icon,
@@ -7,8 +7,6 @@ import {
     HStack,
     Image,
     Fade,
-    VStack,
-    Spacer,
     IconButton,
     Tooltip
 } from '@chakra-ui/react';
@@ -22,21 +20,20 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
 
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
+    const handleInstantContentFade = useCallback(() => {
+        setExpandedContent(false);
+        setCollapsedContent(false);
+    }, [setCollapsedContent, setExpandedContent])
+
+    const handleFutureContentFade = useCallback(() => {
+        setExpandedContent(expandedContainer);
+        setCollapsedContent(!expandedContainer);
+    }, [setExpandedContent, setCollapsedContent, expandedContainer])
+
     useEffect(() => {
         handleInstantContentFade();
         setTimeout(handleFutureContentFade, 400);
-    }, [expandedContainer])
-
-
-    function handleInstantContentFade() {
-        setCollapsedContent(false);
-        setExpandedContent(false);
-    }
-
-    function handleFutureContentFade() {
-        setExpandedContent(expandedContainer);
-        setCollapsedContent(!expandedContainer);
-    }
+    }, [expandedContainer, handleInstantContentFade, handleFutureContentFade])
 
     return <Flex
         rounded="xl"
@@ -44,8 +41,9 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
         direction="column"
         mt={4}
         ml={isNotSmallerScreen ? 4 : 0}
-        h="45vh"
-        w="30vh"
+        h={isNotSmallerScreen ? "45vh" : "60vh"}
+        w={isNotSmallerScreen ? "30vh" : "40vh"}
+        maxW="90vw"
         overflow="hidden"
         pos="relative"
         cursor="pointer"
@@ -63,11 +61,11 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
             w="100%"
             position="absolute"
             bottom="0"
-            h={expandedContainer ? "100%" : "15vh"}
-            p={collapsedContent ? "3" : "8"}
+            h={expandedContainer ? "100%" : "34%"}
+            p={collapsedContent ? "4" : "8"}
             align={expandedContainer ? "flex-start" : "center"}
             bgColor="cyan.400"
-            transition="all 0.5s cubic-bezier(.8,-0.1,.3,1.3)" >
+            transition="all 0.7s cubic-bezier(.8,-0.1,.3,1.3)" >
 
             <Fade in={collapsedContent} unmountOnExit>
                 <HStack>
@@ -109,6 +107,8 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
                             color="gray.300"
                             bgColor="gray.900" >
                             <IconButton
+                                bgColor="cyan.500"
+                                color="white"
                                 size="lg"
                                 icon={<FaGithub />}
                                 isRound='true'
@@ -120,6 +120,8 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
                             color="gray.300"
                             bgColor="gray.900" >
                             <IconButton
+                                bgColor="cyan.500"
+                                color="white"
                                 size="lg"
                                 icon={<FaChevronCircleRight />}
                                 isRound='true'

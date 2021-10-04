@@ -22,8 +22,7 @@ function Portifolio() {
 
             <Box
                 alignSelf="flex-start"
-                mr={isNotSmallerScreen ? "16" : "0"}
-            >
+                mr={isNotSmallerScreen ? "16" : "0"} >
 
                 <Heading
                     fontWeight="extrabold"
