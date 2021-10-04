@@ -25,79 +25,27 @@
         "bottomDesc": "some of my projects",
         "projects": [
             {
-                "projectName": "Pomodoro Helper",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
+                "projectName": "Pomodoro",
+                "description": "An app to help people work or study with the pomodoro technique",
                 "tech": "react",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app",
-                "tag": "APP"
+                "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1633328328/thumbs/pomodoro.png",
+                "repo": "https://github.com/paulo-lucas/pomodoro-app"
             },
             {
                 "projectName": "Draw It",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
+                "description": "Simple and usefull drawing board application using only Socket.io and NodeCron",
                 "tech": "node",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app"
+                "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1633329881/thumbs/Draw_It.png",
+                "repo": "https://github.com/paulo-lucas/drawit",
+                "live": "https://itdraw.herokuapp.com"
             },
             {
                 "projectName": "Github Tracker",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
+                "description": "A tool which consumes the GitHub API to search and list profiles and its repositories",
                 "tech": "html",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app"
-            },
-            {
-                "projectName": "Pomodoro Helper",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
-                "tech": "react",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app",
-                "tag": "APP"
-            },
-            {
-                "projectName": "Draw It",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
-                "tech": "node",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app"
-            },
-            {
-                "projectName": "Github Tracker",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
-                "tech": "html",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app"
-            },
-            {
-                "projectName": "Pomodoro Helper",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
-                "tech": "react",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app",
-                "tag": "APP"
-            },
-            {
-                "projectName": "Draw It",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
-                "tech": "node",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app"
-            },
-            {
-                "projectName": "Github Tracker",
-                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum felis dui, quis scelerisque quam auctor vel. Sed aliquet mollis fermentum.",
-                "tech": "html",
-                "mainImage": "https://avatars.githubusercontent.com/u/51492825?v=4",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app",
-                "live": "https://github.com/paulo-lucas/pomodoro-app"
+                "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1633329480/thumbs/Github_Tracker.png",
+                "repo": "https://github.com/paulo-lucas/github-tracker",
+                "live": "https://github-tracker.netlify.app"
             }
         ]
     }
