@@ -46,6 +46,14 @@
                 "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1633329480/thumbs/Github_Tracker.png",
                 "repo": "https://github.com/paulo-lucas/github-tracker",
                 "live": "https://github-tracker.netlify.app"
+            },
+            {
+                "projectName": "Github Timeline",
+                "description": "Search a github user name and produce a timeline containing each repo and annotated with the repo names, the date they were created, and their descriptions",
+                "tech": "react",
+                "mainImage": "https://res.cloudinary.com/plucas/image/upload/v1633329480/thumbs/github-timeline.png",
+                "repo": "https://github.com/paulo-lucas/github-timeline",
+                "live": "https://ghtimeline.vercel.app"
             }
         ]
     }
