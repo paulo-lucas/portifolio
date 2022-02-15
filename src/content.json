@@ -50,7 +50,7 @@
             },
             {
                 "projectName": "Github Timeline",
-                "description": "Search a github user name and produce a timeline containing each repo and annotated with the repo names, the date they were created, and their descriptions",
+                "description": "Search a github user name and produce a timeline containing each repo info",
                 "tech": "react",
                 "mainImage": "https://res.cloudinary.com/plucas/image/upload/v1633329480/thumbs/github-timeline.png",
                 "repo": "https://github.com/paulo-lucas/github-timeline",
