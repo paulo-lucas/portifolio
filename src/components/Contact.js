@@ -11,6 +11,7 @@ import {
     FaGithub,
     FaLinkedin,
     FaTwitter,
+    FaMedium,
     // FaHackerrank
 } from "react-icons/fa";
 // import {
@@ -49,6 +50,10 @@ function Contact() {
         <ContactButton
             icon={<FaLinkedin />}
             link={links.linkedin} />
+
+        <ContactButton
+            icon={<FaMedium />}
+            link={links.medium} />
 
         <ContactButton
             icon={<FaInstagram />}
