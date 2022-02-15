@@ -99,7 +99,7 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
 
                     <HStack mt="4">
                         {repo && <Tooltip
-                            label="See repository"
+                            label="Repository"
                             color="gray.300"
                             bgColor="gray.900" >
                             <IconButton
@@ -112,7 +112,7 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
                         </Tooltip>}
 
                         {live && <Tooltip
-                            label="See project"
+                            label="Live project"
                             color="gray.300"
                             bgColor="gray.900" >
                             <IconButton
