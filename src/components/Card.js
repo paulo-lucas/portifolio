@@ -48,7 +48,7 @@ function Card({ projectName, description, tech, mainImage, repo, live }) {
         pos="relative"
         cursor="pointer"
         transition="all 0.2s ease-out"
-        _hover={{  transform: "translate(0, -10px)" }}
+        _hover={{ md: {  transform: "translate(0, -10px)" }}}
         onClick={() => setExpandedContainer(!expandedContainer)} >
 
         <Image src={mainImage} />
