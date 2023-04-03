@@ -14,7 +14,7 @@
     "header": {
         "beforeName": "Hi, I am",
         "name": "Paulo Lucas",
-        "bio": " Web and mobile developer & Computer Science student - Node.js, Ruby on Rails, React.js, React Native",
+        "bio": " Web and mobile developer & Computer Science student - Node.js, GoLang, Ruby on Rails, React.js, React Native",
         "actionButton": {
             "text": "Hire me",
             "action": "https://github.com/paulo-lucas/resume/raw/main/en/paulocerqueira.pdf"
