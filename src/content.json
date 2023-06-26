@@ -1,69 +1,69 @@
 {
-    "contact": {
-        "heading": "paulolucas.dev",
-        "links": {
-            "instagram": "https://www.instagram.com/paulo_lucasoc",
-            "linkedin": "https://www.linkedin.com/in/plucas-cer",
-            "twitter": "https://twitter.com/plucasdev",
-            "github": "https://github.com/paulo-lucas",
-            "hackerrank": "https://www.hackerrank.com/plucas_cer",
-            "codewars": "https://www.codewars.com/users/paulo-lucas",
-            "medium": "https://plucasdev.medium.com"
-        }
-    },
-    "header": {
-        "beforeName": "Hi, I am",
-        "name": "Paulo Lucas",
-        "bio": " Web and mobile developer & Computer Science student - Node.js, GoLang, Ruby on Rails, React.js, React Native",
-        "actionButton": {
-            "text": "Hire me",
-            "action": "https://github.com/paulo-lucas/resume/raw/main/en/paulocerqueira.pdf"
-        },
-        "avatar": "https://avatars.githubusercontent.com/u/51492825?v=4"
-    },
-    "portifolio": {
-        "upperDesc": "Check out",
-        "bottomDesc": "some of my projects",
-        "projects": [
-            {
-                "projectName": "Pomodoro",
-                "description": "An app to help people work or study with the pomodoro technique",
-                "tech": "react",
-                "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1633328328/thumbs/pomodoro.png",
-                "repo": "https://github.com/paulo-lucas/pomodoro-app"
-            },
-            {
-                "projectName": "Draw It",
-                "description": "Simple and usefull drawing board application using only Socket.io and NodeCron",
-                "tech": "node",
-                "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1633329881/thumbs/Draw_It.png",
-                "repo": "https://github.com/paulo-lucas/drawit",
-                "live": "https://itdraw.herokuapp.com"
-            },
-            {
-                "projectName": "Github Tracker",
-                "description": "A tool which consumes the GitHub API to search and list profiles and its repositories",
-                "tech": "html",
-                "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1633329480/thumbs/Github_Tracker.png",
-                "repo": "https://github.com/paulo-lucas/github-tracker",
-                "live": "https://github-tracker.netlify.app"
-            },
-            {
-                "projectName": "Github Timeline",
-                "description": "Search a github user name and produce a timeline containing each repo info",
-                "tech": "react",
-                "mainImage": "https://res.cloudinary.com/plucas/image/upload/v1633329480/thumbs/github-timeline.png",
-                "repo": "https://github.com/paulo-lucas/github-timeline",
-                "live": "https://ghtimeline.vercel.app"
-            },
-            {
-                "projectName": "Cart",
-                "description": "Simple product cart using Context API and useReducer hook, tutorial at Medium",
-                "tech": "react",
-                "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1644899820/thumbs/cart.png",
-                "repo": "https://github.com/paulo-lucas/cart",
-                "live": "https://reactcart.vercel.app"
-            }
-        ]
+  "contact": {
+    "heading": "paulolucas.dev",
+    "links": {
+      "instagram": "https://www.instagram.com/paulo_lucasoc",
+      "linkedin": "https://www.linkedin.com/in/plucas-cer",
+      "twitter": "https://twitter.com/plucasdev",
+      "github": "https://github.com/paulo-lucas",
+      "hackerrank": "https://www.hackerrank.com/plucas_cer",
+      "codewars": "https://www.codewars.com/users/paulo-lucas",
+      "medium": "https://plucasdev.medium.com"
     }
+  },
+  "header": {
+    "beforeName": "Hi, I am",
+    "name": "Paulo Lucas",
+    "bio": " Web and mobile developer & Computer Science student - Node.js, GoLang, Ruby on Rails, React.js, React Native",
+    "actionButton": {
+      "text": "Hire me",
+      "action": "https://github.com/paulo-lucas/resume/raw/main/en/paulocerqueira.pdf"
+    },
+    "avatar": "https://avatars.githubusercontent.com/u/51492825?v=4"
+  },
+  "portifolio": {
+    "upperDesc": "Check out",
+    "bottomDesc": "some of my projects",
+    "projects": [
+      {
+        "projectName": "Pomodoro",
+        "description": "An app to help people work or study with the pomodoro technique",
+        "tech": "react",
+        "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1633328328/thumbs/pomodoro.png",
+        "repo": "https://github.com/paulo-lucas/pomodoro-app"
+      },
+      {
+        "projectName": "Draw It",
+        "description": "Simple and usefull drawing board application using only Socket.io and NodeCron",
+        "tech": "node",
+        "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1633329881/thumbs/Draw_It.png",
+        "repo": "https://github.com/paulo-lucas/drawit",
+        "live": "https://itdraw.herokuapp.com"
+      },
+      {
+        "projectName": "Github Tracker",
+        "description": "A tool which consumes the GitHub API to search and list profiles and its repositories",
+        "tech": "html",
+        "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1633329480/thumbs/Github_Tracker.png",
+        "repo": "https://github.com/paulo-lucas/github-tracker",
+        "live": "https://github-tracker.netlify.app"
+      },
+      {
+        "projectName": "Github Timeline",
+        "description": "Search a github user name and produce a timeline containing each repo info",
+        "tech": "react",
+        "mainImage": "https://res.cloudinary.com/plucas/image/upload/v1633329480/thumbs/github-timeline.png",
+        "repo": "https://github.com/paulo-lucas/github-timeline",
+        "live": "https://ghtimeline.vercel.app"
+      },
+      {
+        "projectName": "Cart",
+        "description": "Simple product cart using Context API and useReducer hook, tutorial at Medium",
+        "tech": "react",
+        "mainImage": "https://res.cloudinary.com/plucas/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1644899820/thumbs/cart.png",
+        "repo": "https://github.com/paulo-lucas/cart",
+        "live": "https://reactcart.vercel.app"
+      }
+    ]
+  }
 }
