@@ -11,7 +11,7 @@ function Projects() {
   const { projects } = portifolio;
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
-  return <Stack>
+  return <Stack mt="8">
     <Flex
       direction={isNotSmallerScreen ? "row" : "column"}
       justifyContent="center"

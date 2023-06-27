@@ -13,12 +13,13 @@ import {
 } from '@chakra-ui/react';
 import { portifolio } from 'content.json'
 import Projects from "components/Projects";
+import Designs from "components/Designs";
 
 function Portifolio() {
     const { upperDesc, bottomDesc } = portifolio
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
-    return <Stack px={isNotSmallerScreen ? "32" : "4"} >
+    return <Stack px={isNotSmallerScreen ? "32" : "4"} w="100vw">
         <Box
             alignSelf="flex-start"
             mb={8} >
@@ -40,7 +41,7 @@ function Portifolio() {
             isFitted
             variant='line'
             w="100%">
-            <TabList mb='1em'>
+            <TabList mb='1'>
                 <Tab>Projects</Tab>
                 <Tab>Designs</Tab>
             </TabList>
@@ -49,7 +50,7 @@ function Portifolio() {
                     <Projects />
                 </TabPanel>
                 <TabPanel>
-                    <p>two!</p>
+                    <Designs />
                 </TabPanel>
             </TabPanels>
         </Tabs>
