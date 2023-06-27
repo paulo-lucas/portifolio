@@ -18,7 +18,7 @@ function Projects() {
         <Heading mb="2" display={"block"}>{item.title}</Heading>
 
         <iframe
-          width={!!item.prototype && isNotSmallerScreen ? "75%" : "100%"}
+          width={!!item.prototype && isNotSmallerScreen ? "70%" : "100%"}
           height="600"
           style={{ display: "inline-block", marginTop: "8px" }}
           title={item.title}
@@ -26,9 +26,12 @@ function Projects() {
           allowfullscreen></iframe>
 
         {!!item.prototype && <iframe
-          width={isNotSmallerScreen ? "25%" : "100%"}
-          style={{ display: "inline-block", marginTop: "8px" }}
-          height="600"
+          width={isNotSmallerScreen ? "30%" : "100%"}
+          style={{
+            display: "inline-block",
+            marginTop: "8px",
+            height: isNotSmallerScreen ? "600px" : "180vw"
+          }}
           title={item.title}
           src={item.prototype}
           allowfullscreen></iframe>}
