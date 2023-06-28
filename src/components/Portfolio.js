@@ -11,12 +11,12 @@ import {
     Text,
     useMediaQuery
 } from '@chakra-ui/react';
-import { portifolio } from 'content.json'
+import { portfolio } from 'content.json'
 import Projects from "components/Projects";
 import Designs from "components/Designs";
 
-function Portifolio() {
-    const { upperDesc, bottomDesc } = portifolio
+function Portfolio() {
+    const { upperDesc, bottomDesc } = portfolio
     const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     return <Stack px={isNotSmallerScreen ? "32" : "4"} w="100vw">
@@ -57,4 +57,4 @@ function Portifolio() {
     </Stack>
 }
 
-export default Portifolio
+export default Portfolio

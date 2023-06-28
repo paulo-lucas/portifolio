@@ -1,14 +1,14 @@
 import { VStack } from "@chakra-ui/layout";
 import Contact from "components/Contact";
 import Header from "components/Header";
-import Portifolio from "components/Portifolio";
+import Portfolio from "components/Portfolio";
 
 function App() {
   return (
     <VStack p={5}>
       <Contact />
       <Header />
-      <Portifolio />
+      <Portfolio />
     </VStack>
   );
 }

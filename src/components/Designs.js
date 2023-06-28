@@ -6,10 +6,10 @@ import {
   Divider,
   useMediaQuery
 } from '@chakra-ui/react';
-import { portifolio } from "content.json";
+import { portfolio } from "content.json";
 
 function Projects() {
-  const { designs } = portifolio;
+  const { designs } = portfolio;
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return <Stack mt="8" align={"center"}>

@@ -5,10 +5,10 @@ import {
   useMediaQuery
 } from '@chakra-ui/react';
 import Card from "components/Card";
-import { portifolio } from "content.json";
+import { portfolio } from "content.json";
 
 function Projects() {
-  const { projects } = portifolio;
+  const { projects } = portfolio;
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
   return <Stack mt="8">
